@@ -7,19 +7,20 @@
   },
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#12A7D3",
-    "light": "#81D7F7",
-    "dark": "#004E7A"
-  },
-  "topbarLinks": [
-    {
-      "name": "Documentation",
-      "url": "https://mintlify.com/docs"
+    "primary": "#9FF5C0",
+    "light": "#8CF3B4",
+    "dark": "#0E823A",
+    "background": {
+      "dark": "#111"
     }
-  ],
+  },
+  "modeToggle": {
+    "default": "dark",
+    "isHidden": true
+  },
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://curto.io/dashboard"
   },
   "tabs": [
     {
