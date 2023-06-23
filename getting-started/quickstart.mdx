@@ -1,0 +1,63 @@
+---
+title: Início Rápido
+description: 'Aprenda como integrar a API do curto.io no seu projeto, sem perder sua marca!'
+---
+
+## Pré-requisitos
+
+- [Crie uma API Key](https://curto.io/profile/developer)
+
+## Autenticação
+
+Para autenticar suas requisições, você precisa agregar o seguinte cabeçalho:
+
+```bash
+'X-Curto-Api-Key': '<your_key>'
+```
+
+## Encurte seu primeiro link!
+
+Você pode fazer isso através de uma requisição `POST` para o endpoint `/v1/links`, igual o exemplo abaixo:
+
+```bash
+curl -X POST -H  'Content-Type: application/json'
+\ -H 'X-Curto-Api-Key: <your_key>' 
+\ -d '{ "link": "<your_destination>" }' 
+\ https://api.curto.io/v1/links
+```
+
+Você então terá um `JSON` como esse na resposta:
+
+```json
+200 OK
+
+{
+  "data": {
+    "id": "<link_id>",
+    "destination": "<your_destination>",
+    "token": "D7tX8",
+    "short_link": "https://curr.to/D7tX8",
+    "domain_id": "<domain_id>",
+    "domain": "curr.to",
+    "password": false,
+    "created_at": "2023-06-21T20:26:04.865908",
+    "updated_at": "2023-06-21T20:26:04.865922",
+    "clicks": 0
+  },
+  "status": "OK"
+}
+```
+
+## Explore
+
+<CardGroup cols={2}>
+  <Card title="Referência da API" icon="file"  href="https://docs.curto.io/api-reference" >
+    Integre nossa API REST.
+  </Card>
+  <Card title="Integrações" icon="square-2">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </Card>
+  <Card title="Third Card" icon="square-3">
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+  </Card>
+</CardGroup>

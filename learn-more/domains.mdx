@@ -1,0 +1,30 @@
+---
+title: Domínios
+description: 'Vincule um domínio personalizado da sua marca e crie links curtos com a cara do seu negócio! Amplie a presença da sua marca com o Curto!'
+---
+
+Para vincular o domínio da sua marca com o Curto, você vai precisar configurar domínio desejado nas suas configurações no Curto e adicionar os registros DNS em seu provedor.
+
+## Adicionando o domínio customizado no Curto
+
+Navegue até a página de [Domínios](https://curto.io/domains) e clique em "Adicionar domínio". Envie o domínio desejado sem o prefixo `https://www`, como por exemplo, `curto.link`. 
+
+![Adding Domain GIF](./images/domains.gif)
+
+## Adicione os Registros DNS
+
+Navegue até as configurações de DNS do seu provedor. Adicione um novo registro DNS com os seguintes valores
+
+Se for um domínio, como `curto.link`, adicione um [Registro do Tipo A](https://www.cloudflare.com/pt-br/learning/dns/dns-records/dns-a-record):
+
+```
+A | @ | 76.76.21.21
+```
+
+Se for um subdomínio, como `links.curto.io`, adicione um [Registro do Tipo CNAME](https://www.cloudflare.com/pt-br/learning/dns/dns-records/dns-cname-record):
+
+```
+CNAME | links | cname.vercel-dns.com.
+```
+
+Se tiver qualquer problema, não hesite em [me contatar](mailto:vitor@curto.io).

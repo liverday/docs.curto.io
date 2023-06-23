@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "curto.io",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -24,37 +24,47 @@
   },
   "tabs": [
     {
-      "name": "API Reference",
+      "name": "Referência da API",
       "url": "api-reference"
     }
   ],
+
+  "primaryTab": {
+    "name": "Documentação"
+  },
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
+      "group": "Comece agora!",
+      "pages": ["getting-started/introduction", "getting-started/quickstart"]
     },
     {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
+      "group": "Aprenda mais",
+      "pages": ["learn-more/domains", "learn-more/microsites", "learn-more/ab-testing"]
     },
     {
-      "group": "API Documentation",
+      "group": "Integrações",
+      "pages": ["integrations/zapier", "integrations/hubspot", "integrations/ifttt"]
+    },
+    {
+      "group": "Documentação da API",
       "pages": ["api-reference/authentication"]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Links",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
+        "api-reference/links/get",
+        "api-reference/links/create"
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/curto_io",
+    "linkedin": "https://www.linkedin.com/company/curto-io"
   },
-  "backgroundImage": "/background.png"
+  "backgroundImage": "/background.png",
+  "api": {
+    "playground": {
+      "mode": "hide"
+    }
+  }
 }
