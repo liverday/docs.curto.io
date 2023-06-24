@@ -20,10 +20,10 @@ Para autenticar suas requisições, você precisa agregar o seguinte cabeçalho:
 Você pode fazer isso através de uma requisição `POST` para o endpoint `/v1/links`, igual o exemplo abaixo:
 
 ```bash
-curl -X POST -H  'Content-Type: application/json'
-\ -H 'X-Curto-Api-Key: <your_key>' 
-\ -d '{ "link": "<your_destination>" }' 
-\ https://api.curto.io/v1/links
+curl -X POST -H 'Content-Type: application/json' \
+-H 'X-Curto-Api-Key: <your_key>' \
+-d '{ "link": "<your_destination>" }' \
+https://api.curto.io/v1/links
 ```
 
 Você então terá um `JSON` como esse na resposta:
