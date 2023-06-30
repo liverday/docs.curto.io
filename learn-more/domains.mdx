@@ -12,7 +12,7 @@ Para vincular o domínio da sua marca com o Curto, você vai precisar configurar
 
 ## Adicionando o domínio customizado no Curto
 
-Navegue até a página de [Domínios](https://curto.io/domains) e clique em "Adicionar domínio". Envie o domínio desejado sem o prefixo `https://www`, como por exemplo, `medeirol.ink`. 
+Navegue até a página de [Domínios](https://curto.io/domains) e clique em "Adicionar domínio". Envie o domínio desejado sem o prefixo `https://www`, como por exemplo, `exemplo.com.br`. 
 
 ![Adding Domain GIF](/images/domains.gif)
 
@@ -20,16 +20,18 @@ Navegue até a página de [Domínios](https://curto.io/domains) e clique em "Adi
 
 Navegue até as configurações de DNS do seu provedor. Adicione um novo registro DNS com os seguintes valores
 
-Se for um domínio, como `medeirol.ink`, adicione um [Registro do Tipo A](https://www.cloudflare.com/pt-br/learning/dns/dns-records/dns-a-record):
+Se for um domínio, como `exemplo.com.br`, adicione uma [Entrada do Tipo A](https://www.cloudflare.com/pt-br/learning/dns/dns-records/dns-a-record):
 
 ```
-A | @ | 76.76.21.21
+Tipo    Nome    Valor
+A       @       76.76.21.21
 ```
 
-Se for um subdomínio, como `links.curto.io`, adicione um [Registro do Tipo CNAME](https://www.cloudflare.com/pt-br/learning/dns/dns-records/dns-cname-record):
+Se for um subdomínio, como `subdominio.exemplo.com.br`, adicione uma [Entrada do Tipo CNAME](https://www.cloudflare.com/pt-br/learning/dns/dns-records/dns-cname-record):
 
 ```
-CNAME | links | cname.vercel-dns.com.
+Tipo      Nome          Valor
+CNAME     subdominio    cname.vercel-dns.com.
 ```
 
 Se tiver qualquer problema, não hesite em [me contatar](mailto:vitor@curto.io).
