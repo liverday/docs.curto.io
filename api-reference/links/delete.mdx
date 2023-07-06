@@ -1,0 +1,21 @@
+---
+title: "Deletar um link"
+api: "DELETE https://api.curto.io/v1/links/{link_id}"
+description: "Esse endpoint deleta um link"
+---
+
+### Parâmetros de Caminho (Path Variables)
+
+<ParamField body="link_id" type="string">
+  O ID do link que você quer deletar.
+</ParamField>
+
+<RequestExample>
+
+```bash
+curl -X DELETE -H 'Content-Type: application/json' \
+-H 'X-Curto-Api-Key: <your_key>' \
+https://api.curto.io/v1/links/{your_link_id}
+```
+
+</RequestExample>
