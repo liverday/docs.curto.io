@@ -53,7 +53,8 @@
       "group": "Links",
       "pages": [
         "api-reference/links/get",
-        "api-reference/links/create"
+        "api-reference/links/create",
+        "api-reference/links/delete"
       ]
     }
   ],
