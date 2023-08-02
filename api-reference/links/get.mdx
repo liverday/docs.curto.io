@@ -6,11 +6,11 @@ description: "Esse endpoint lista todos os links curtos"
 
 ### Parâmetros de Query
 
-<ParamField body="sortBy" type="enum">
+<ParamField body="sort_by" type="enum">
   Ordena os links por data de criação ou pela quantidade de cliques: "date" ou "performance"
 </ParamField>
 
-<ParamField body="sortDirection" type="enum">
+<ParamField body="sort_direction" type="enum">
   A direção da ordenação. "asc" para crescente e "desc" para decrescente.
 </ParamField>
 
@@ -18,7 +18,7 @@ description: "Esse endpoint lista todos os links curtos"
   Número da página que você está buscando os links. Se não for enviado, o padrão será 1
 </ParamField>
 
-<ParamField body="pageSize" type="number">
+<ParamField body="page_size" type="number">
   A quantidade de itens na página. Se não for enviado, o padrão será 12, e o valor máximo para esse parâmetro é 100.
 </ParamField>
 
