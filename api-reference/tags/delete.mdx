@@ -1,0 +1,27 @@
+---
+title: "Apagar uma Tag"
+api: "DELETE https://api.curto.io/v1/tags/{tag_id}"
+description: "Esse endpoint apaga uma Tag"
+---
+
+### Variáveis de Caminho
+
+<ParamField path="tag_id" type="number">
+  O identificador da Tag que será alterado.
+</ParamField>
+
+<RequestExample>
+
+```bash
+curl -X DELETE -H 'Content-Type: application/json' \
+-H 'X-Curto-Api-Key: <your_key>' \
+https://api.curto.io/v1/tags/<tag_id>
+```
+
+</RequestExample>
+
+<ResponseExample>
+
+204 No Content
+
+</ResponseExample>

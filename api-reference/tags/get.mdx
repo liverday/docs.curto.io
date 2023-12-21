@@ -1,0 +1,58 @@
+---
+title: "Listar todas as Tags"
+api: "GET https://api.curto.io/v1/tags"
+description: "Esse endpoint lista todas as Tags"
+---
+
+### Resposta
+
+<ResponseField name="status" type="string">
+  Indica se a requisição foi bem sucedida. OK para quando for bem sucedida, e ERROR para quando não for.
+</ResponseField>
+
+<ResponseField name="data" type="array">
+
+  Uma lista de tags.
+
+  <Expandable title="Tag Object">
+
+    <ResponseField name="id" type="string">
+      Esse é o ID interno do link criado. Você não precisa memorizar esse dado
+    </ResponseField>
+
+    <ResponseField name="label" type="string">
+      É o nome da sua Tag.
+    </ResponseField>
+
+    <ResponseField name="color" type="string">
+      É o identificador da cor da sua Tag.
+    </ResponseField>
+  </Expandable>
+
+</ResponseField>
+
+<RequestExample>
+
+```bash
+curl -H 'X-Curto-Api-Key: <your_key>' \
+https://api.curto.io/v1/tags
+```
+
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+{
+  "data": [
+    {
+			"id": "<tag_id>",
+			"label": "Nome da tag",
+			"color": "red"
+    }
+	]
+  "status": "OK"
+}
+```
+
+</ResponseExample>

@@ -1,0 +1,67 @@
+---
+title: "Criar uma Tag"
+api: "POST https://api.curto.io/v1/tags"
+description: "Esse endpoint cria uma Tag"
+---
+
+### Corpo da requisição
+
+<ParamField body="label" type="string">
+  É o nome da Tag.
+</ParamField>
+
+<ParamField body="color" type="string">
+  É a cor da Tag.
+</ParamField>
+
+### Resposta
+
+<ResponseField name="status" type="string">
+  Indica se a requisição foi bem sucedida. OK para quando for bem sucedida, e ERROR para quando não for.
+</ResponseField>
+
+<ResponseField name="data" type="object">
+
+<Expandable title="Tag Object">
+
+<ResponseField name="id" type="string">
+    Esse é o ID interno do link criado. Você não precisa memorizar esse dado
+</ResponseField>
+
+<ResponseField name="label" type="string">
+    É o nome da sua Tag.
+</ResponseField>
+
+<ResponseField name="color" type="string">
+    É o identificador da cor da sua Tag.
+</ResponseField>
+
+</Expandable>
+
+</ResponseField>
+
+<RequestExample>
+
+```bash
+curl -X POST -H 'Content-Type: application/json' \
+-H 'X-Curto-Api-Key: <your_key>' \
+-d '{ "label": "A Label", "color": "red" }' \
+https://api.curto.io/v1/tags
+```
+
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+{
+  "data": {
+    "id": "<tag_id>",
+	"label": "A Label",
+	"color": "red"
+  }
+  "status": "OK"
+}
+```
+
+</ResponseExample>
