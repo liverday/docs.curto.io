@@ -49,7 +49,7 @@ description: "Esse endpoint atualiza uma Tag"
 <RequestExample>
 
 ```bash
-curl -X POST -H 'Content-Type: application/json' \
+curl -X PUT -H 'Content-Type: application/json' \
 -H 'X-Curto-Api-Key: <your_key>' \
 -d '{ "label": "A Label", "color": "red" }' \
 https://api.curto.io/v1/tags/<tag_id>
@@ -65,7 +65,7 @@ https://api.curto.io/v1/tags/<tag_id>
     "id": "<tag_id>",
     "label": "A Label",
     "color": "red"
-  }
+  },
   "status": "OK"
 }
 ```
